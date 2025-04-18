@@ -1,0 +1,221 @@
+/* General styles */
+body {
+  font-family: Akshar, sans-serif;
+  margin: 20px;
+}
+
+.h1 {
+  font-size: 2vw;
+  color: black;
+  margin-bottom: 5px;
+  text-align: center;
+
+}
+
+h2 {
+  color: black;
+  font-size: 1.5vw;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.highlight {
+  background-color: #4D43B2;
+  
+  padding: 10px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 3vw;
+  cursor: pointer;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #F0F0F0;
+    border-radius: 30px;
+    border-bottom: 4px solid #4D43B2;
+    box-shadow: 6px 6px 6px #999;
+    user-select: none;
+    background: #393186;
+    transition: background 0.05s linear;
+    transition: all .05s linear;
+    margin-top: 10px;
+    
+
+}
+
+.instructions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+ .orange-box {
+  background-color: #ff6634;
+}
+.title{
+  color:#fff;
+  font-size: 2vw;
+  font-weight: 800;
+}
+.instructions .orange-box {
+  background-color: #ff6634;;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  flex: 1 1 50%;
+  margin-bottom: 10px;
+  font-size: 3vw;
+    margin-bottom: 10px;
+    font-size: 3vw;
+    max-width: 50%; /* Ensures the box does not exceed 40% */
+    box-sizing: border-box; /* Includes padding within the 40% width */
+    border-radius: 10px;
+  
+}
+
+.share-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #f2faff; /* Adjust background as needed */
+  border-radius: 8px;
+  gap: 10px;
+}
+
+.share-button svg {
+  width: 40px; /* Responsive icon size */
+  height: 40px;
+}
+
+.share-button span {
+  font-size: 20px; /* Adjust text size */
+  color: #333; /* Adjust text color */
+}
+
+@media (max-width: 600px) {
+  .share-button {
+      padding: 8px;
+      gap: 6px;
+  }
+
+  .share-button svg {
+      width: 20px;
+      height: 20px;
+  }
+
+  .share-button span {
+      font-size: 14px;
+  }
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid black;
+  text-align: center;
+  padding: 8px;
+}
+
+.blank-arrow {
+
+  
+  width:40%;
+  
+}
+.red-arrow{
+  width:40%;
+}
+
+
+
+.candidate-img, .symbol-img {
+  width: 12vw;
+  height: 12vw;
+  vertical-align: middle;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  h1 {
+      font-size: 20px;
+  }
+
+  h2 {
+      font-size: 16px;
+  }
+
+  .highlight, .orange-box, .share-button {
+      font-size: 14px;
+  }
+
+  table, th, td {
+      font-size: 12px;
+  }
+
+  .instructions {
+      flex-direction: column;
+  }
+
+  .orange-box {
+      width: 100%;
+  }
+
+  .share-button {
+      width: 100%;
+      max-width: none;
+      margin-top: 10px;
+  }
+}
+.btn {
+  text-align: center;
+  height: 65px;
+  width: 100%;
+  line-height: 65px;
+  cursor: pointer;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #F0F0F0;
+  border-radius: 30px;
+  border-bottom: 4px solid #4D43B2;
+  box-shadow: 6px 6px 6px #999;
+  user-select: none;
+  background: #393186;
+  transition: background 0.05s linear;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Responsive button for smaller screens */
+@media (max-width: 768px) {
+  .btn {
+    height: 50px;
+    font-size: 18px; /* Adjust font size for smaller screens */
+    line-height: 50px;
+    width: 90%; /* Adjust width for smaller screens */
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn {
+    height: 34px;
+        font-size: 12px;
+        line-height: 32px;
+        width: 100%;
+        border-radius: 15px;
+        margin-top: 0px;
+  }
+}
